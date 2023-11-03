@@ -136,7 +136,7 @@ const Home = () => {
 
     const [cart, setCart] = useState(false)
     const openCart = ()=>{
-      setCart(true)
+      setCart(!cart)
     }
     console.log(cart);
     
@@ -457,7 +457,7 @@ const Home = () => {
         <Products/>
     </div>
     <div>
-      <Cart/>
+      <Cart state={cart}/>
     </div>
     </div>
   )
